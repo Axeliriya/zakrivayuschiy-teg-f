@@ -1,0 +1,45 @@
+body:has(.modal[open]) {
+  overflow: hidden;
+}
+
+.modal {
+  grid-template-columns: min-content auto;
+  align-items: center;
+  gap: 30px 20px;
+  padding: 30px;
+  background-color: var(--base-color, #fff);
+  inline-size: clamp(21.25rem, 5.538vw + 19.952rem, 22.375rem);
+}
+
+.modal[open] {
+  display: grid;
+}
+
+.modal[open]::backdrop {
+  backdrop-filter: brightness(25%);
+}
+
+.modal .floppy__icon {
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.modal__text {
+  font-family: var(--accent-font, "PressStart2P"), cursive;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-transform: var(--text-case, uppercase);
+}
+
+.modal__close-button {
+  grid-column: span 2;
+  justify-self: stretch;
+  padding: 10px;
+}
+
+@media (width < 376px) {
+  .modal {
+    padding: 30px 40px;
+    min-inline-size: 92%;
+  }
+}

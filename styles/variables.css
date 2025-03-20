@@ -1,1 +1,42 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --bg-gradient: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  --base-color: #fff;
+  --contrast-color: #000;
+  --accent-color: #f00;
+  --main-font: "Inter";
+  --accent-font: "PressStart2P";
+  --line-height: 1.18;
+  --font-weight-text: 400;
+  --font-weight-title: 700;
+  --primary-font-size: 1.125rem;
+  --logo-font-size: clamp(3.0625rem, 2.4427rem + 2.6446vw, 4.0625rem);
+  --heading-font-size: clamp(0.875rem, 0.5263rem + 1.4876vw, 1.4375rem);
+  --section-inline-size: clamp(23.438rem, 50.077vw + 11.701rem, 43.75rem);
+  --header-padding: clamp(7.5rem, 1.322vw + 7.19rem, 8rem);
+  --border: 0.125rem solid var(--contrast-color);
+  --text-case: uppercase;
+}
+
+.card__title {
+  --line-height: 1.22;
+}
+
+.logo,
+.image-label {
+  --line-height: 1;
+}
+
+.button {
+  --line-height: 0.9;
+}
+
+@media (width < 376px) {
+  :root {
+    --logo-text-size: clamp(2.375rem, -1.625rem + 20vw, 3.0625rem);
+    --section-inline-size: 100%;
+    --header-padding: clamp(5.625rem, 54.545vw - 5.284rem, 7.5rem);
+  }
+}

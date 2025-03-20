@@ -1,0 +1,52 @@
+.card {
+  border: var(--border, 2px solid #000);
+  background-color: var(--base-color, #fff);
+}
+
+.card__title {
+  border-block-end: var(--border, 2px solid #000);
+  padding: 4px 10px;
+  font-size: inherit;
+  font-variation-settings: "wght" var(--font-weight-title, 700);
+}
+
+.card__image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__image {
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1 / 1;
+}
+
+.image-label {
+  position: absolute;
+  top: 25px;
+  right: clamp(0.813rem, 3.692vw - 0.053rem, 1.563rem);
+  opacity: 0.5;
+  color: var(--contrast-color, #000);
+  font-family: var(--accent-font, "PressStart2P"), cursive;
+  font-size: 0.875rem;
+  line-height: var(--line-height, 1.2);
+  text-transform: var(--text-case, uppercase);
+  text-shadow: 1px 1px 0 var(--base-color, #fff), -1px -1px 0 var(--base-color, #fff),
+    -1px 1px 0 var(--base-color, #fff), 1px -1px 0 var(--base-color, #fff);
+  mix-blend-mode: hard-light;
+}
+
+.card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-block-start: var(--border, 2px solid #000);
+  padding: 25px;
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  gap: 6px;
+}
