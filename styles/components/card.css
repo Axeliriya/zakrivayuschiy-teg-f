@@ -50,3 +50,12 @@
   align-items: stretch;
   gap: 6px;
 }
+
+@supports (text-stroke: 1px var(--main-color, #fff)) or
+  (-webkit-text-stroke: 1px var(--main-color, #fff)) {
+  .image-label {
+    -webkit-text-stroke: 1px var(--main-color, #fff);
+    text-stroke: 1px var(--main-color, #fff);
+    text-shadow: none;
+  }
+}

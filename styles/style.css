@@ -20,8 +20,6 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  min-block-size: 667px;
-  block-size: 100dvh;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: "wght" var(--font-weight-text, 400);
