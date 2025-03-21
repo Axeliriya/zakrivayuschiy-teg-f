@@ -6,6 +6,7 @@
   --base-color: #fff;
   --contrast-color: #000;
   --accent-color: #f00;
+  --bg-btn-color: transparent;
   --main-font: "Inter";
   --accent-font: "PressStart2P";
   --line-height: 1.18;
@@ -17,11 +18,8 @@
   --section-inline-size: clamp(23.438rem, 50.077vw + 11.701rem, 43.75rem);
   --header-padding: clamp(7.5rem, 1.322vw + 7.19rem, 8rem);
   --border: 0.125rem solid var(--contrast-color);
+  --gap: 50px;
   --text-case: uppercase;
-}
-
-.card__title {
-  --line-height: 1.22;
 }
 
 .logo,
@@ -29,8 +27,21 @@
   --line-height: 1;
 }
 
+.card__title {
+  --line-height: 1.22;
+}
+
+.card__description {
+  --gap: 25px;
+}
+
 .button {
   --line-height: 0.9;
+}
+
+.save__button {
+  --section-inline-size: clamp(19.125rem, 8.923vw + 17.034rem, 20.938rem);
+  --bg-btn-color: var(--base-color);
 }
 
 @media (width < 376px) {

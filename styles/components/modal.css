@@ -7,6 +7,7 @@ body:has(.modal[open]) {
   align-items: center;
   gap: 30px 20px;
   padding: 30px;
+  text-transform: var(--text-case, uppercase);
   background-color: var(--base-color, #fff);
   inline-size: clamp(21.25rem, 5.538vw + 19.952rem, 22.375rem);
 }
@@ -28,13 +29,12 @@ body:has(.modal[open]) {
   font-family: var(--accent-font, "PressStart2P"), cursive;
   font-size: 0.875rem;
   line-height: 1.5;
-  text-transform: var(--text-case, uppercase);
 }
 
 .modal__close-button {
   grid-column: span 2;
-  justify-self: stretch;
   padding: 10px;
+  text-transform: inherit;
 }
 
 @media (width < 376px) {

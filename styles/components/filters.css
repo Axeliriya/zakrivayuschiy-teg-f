@@ -1,31 +1,31 @@
-.brightness {
+.filter-brightness {
   filter: brightness(40%);
 }
 
-.invert {
+.filter-invert {
   filter: invert(100%);
 }
 
-.sepia {
+.filter-sepia {
   filter: sepia(0.8);
 }
 
-.hue-rotate {
+.filter-hue-rotate {
   filter: hue-rotate(0.25turn);
 }
 
-.shadow {
+.filter-shadow {
   filter: drop-shadow(20px -5px 25px #010030);
 }
 
-.saturate {
+.filter-saturate {
   filter: saturate(390%);
 }
 
-.custom-filter {
+.filter-custom {
   filter: brightness(0.7) drop-shadow(8px 2px 6px blue) contrast(4) invert(0.8);
 }
 
-.grayscale {
+.filter-grayscale {
   filter: grayscale(80%);
 }
